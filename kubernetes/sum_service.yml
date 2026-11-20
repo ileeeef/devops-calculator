@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sum_service
+  name: sum-service
 spec:
   selector:
-    app: calculator-sum
+    app: sum-service
   ports:
     - protocol: TCP
       port: 50001
