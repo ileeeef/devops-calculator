@@ -59,11 +59,11 @@ pipeline {
         stage('Deploy to Kubernetes'){
             steps{
                 sh '''
-                    kubectl apply-f kubernetes/calc_service.yml
-                    kubectl apply-f kubernetes/sum_service.yml
-                    kubectl apply-f kubernetes/sub_service.yml
-                    kubectl apply-f kubernetes/mul_service.yml
-                    kubectl apply-f kubernetes/div_service.yml
+                    kubectl apply -f kubernetes/calc_service.yml
+                    kubectl apply -f kubernetes/sum_service.yml
+                    kubectl apply -f kubernetes/sub_service.yml
+                    kubectl apply -f kubernetes/mul_service.yml
+                    kubectl apply -f kubernetes/div_service.yml
                     '''
             }
         }
